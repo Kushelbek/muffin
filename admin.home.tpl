@@ -19,11 +19,6 @@
 </div>
 <!-- ENDIF -->
 
-<!-- IF {PHP|file_exists('themes/admin/maffin/inc/home.tpl')} -->
-{FILE "themes/admin/maffin/inc/home.tpl"}
-<!-- ENDIF -->
-
-
 <div class="col-md-7">
 	<div class="col-md-12">
 		<div class="card">

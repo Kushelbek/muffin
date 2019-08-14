@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-	<div class="col-md-12">
+	<div class="col-md-4">
 		<div class="card">
 			<div class="card-body">
 				<h5><i class="mdi mdi-settings"></i> {PHP.L.Core}</h5>

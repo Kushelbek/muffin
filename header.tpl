@@ -95,12 +95,12 @@
 					<ul class="navbar-nav my-lg-0">
 						<!-- Profile -->
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<!-- IF {PHP.usr.profile.user_avatar} -->{PHP.usr.profile.user_avatar|cot_files_user_avatar_url($this)}<!-- ELSE -->datas/defaultav/blank.png<!-- ENDIF -->" alt="{PHP.usr.profile.user_name}" class="profile-pic" /></a>
+							<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<!-- IF {PHP.usr.profile.user_avatar} -->{PHP.usr.profile.user_avatar}<!-- ELSE -->datas/defaultav/blank.png<!-- ENDIF -->" alt="{PHP.usr.profile.user_name}" class="profile-pic" /></a>
 							<div class="dropdown-menu dropdown-menu-right scale-up">
 								<ul class="dropdown-user">
 									<li>
 										<div class="dw-user-box">
-											<div class="u-img"><img src="<!-- IF {PHP.usr.profile.user_avatar} -->{PHP.usr.profile.user_avatar|cot_files_user_avatar_url($this)}<!-- ELSE -->datas/defaultav/blank.png<!-- ENDIF -->" alt="{PHP.usr.profile.user_name}"></div>
+											<div class="u-img"><img src="<!-- IF {PHP.usr.profile.user_avatar} -->{PHP.usr.profile.user_avatar}<!-- ELSE -->datas/defaultav/blank.png<!-- ENDIF -->" alt="{PHP.usr.profile.user_name}"></div>
 											<div class="u-text">
 												<h4>{PHP.L.admin-hi}, {PHP.usr.name}</h4>
 												<a href="{PHP|cot_url('users','m=details')}" class="btn btn-rounded btn-danger btn-sm">{PHP.L.Profile}</a>
