@@ -1,7 +1,7 @@
 <!-- BEGIN: MAIN -->
-					<div class="block">
-						<h5><i class="fa fa-comments"></i> {PHP.L.Newcomments}</h5>
-						<div class="wrapper">
+					<div class="card">
+						<div class="card-body">
+                            <h5><i class="mdi mdi-comment-account-outline"></i> {PHP.L.Newcomments}</h5>
 							<table class="table table-striped">
 <!-- BEGIN: PAGECOM_ROW -->
 								<tr>

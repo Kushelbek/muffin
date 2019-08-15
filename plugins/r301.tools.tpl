@@ -1,11 +1,9 @@
 <!-- BEGIN: MAIN -->
-
-			<div class="row-fluid">
 				<div class="col-md-12">
 {FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
-					<div class="block">
-						<h5><i class="icon-cogs"></i> r301</h5>
-						<div class="wrapper">
+					<div class="card">
+						<h5><i class="mdi mdi-link-variant"></i> r301</h5>
+						<div class="card-body">
 							<form action="{ADMIN_R301_UPDATE_URL}" method="post" name="pageform">
 								<table class="table table-bordered">
 									<thead>
@@ -46,11 +44,11 @@
 							</form>
 						</div>
 					</div>
-					<div class="block">
+					<div class="card">
 						<h5>{PHP.L.New}</h5>
-						<div class="wrapper">
+						<div class="card-body">
 							<form action="{ADMIN_R301_ADD_URL}" method="post" name="pageform">
-								<table class="table table-bordered m0">
+								<table class="table table-bordered">
 									<tr>
 										<td>{PHP.L.301_from}</td>
 										<td>{ADMIN_R301_FROM}</td>
@@ -78,6 +76,4 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
 <!-- END: MAIN -->

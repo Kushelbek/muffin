@@ -86,7 +86,7 @@
                 <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><a href="{ADMIN_HITS_ROW_WEEK_URL}">{ADMIN_HITS_ROW_WEEK}</a></h4>
+                            <h4 class="card-title">{ADMIN_HITS_ROW_WEEK}</h4>
                             <div class="text-right"> <span class="text-muted">{PHP.L.Hits}</span>
                                 <h1 class="font-light"> {ADMIN_HITS_ROW_WEEK_HITS}</h1>
                             </div>

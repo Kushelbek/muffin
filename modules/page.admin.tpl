@@ -18,10 +18,10 @@
 						<div class="card-body">
                             <h5>{PHP.L.Pages} ({ADMIN_PAGE_TOTALDBPAGES})</h5>
 							<div class="button-group item-control">
-								<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="mdi mdi-settings"></i> {PHP.L.Configuration}</a>
-								<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.adm_extrafields}</a>
-								<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="mdi mdi-view-module"></i> {PHP.L.Categories}</a>
-								<a href="{ADMIN_PAGE_URL_ADD}" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="mdi mdi-plus"></i> {PHP.L.page_addtitle}</a>
+								<a title="{PHP.L.Configuration}" href="{ADMIN_PAGE_URL_CONFIG}" class="btn btn-primary"><i class="mdi mdi-settings"></i> {PHP.L.Configuration}</a>
+								<a href="{ADMIN_PAGE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.adm_extrafields}</a>
+								<a href="{ADMIN_PAGE_URL_STRUCTURE}" class="btn btn-primary"><i class="mdi mdi-view-module"></i> {PHP.L.Categories}</a>
+								<a href="{ADMIN_PAGE_URL_ADD}" class="btn btn-primary"><i class="mdi mdi-plus"></i> {PHP.L.page_addtitle}</a>
 							</div>
 						</div>
 					</div>

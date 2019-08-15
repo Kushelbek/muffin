@@ -6,8 +6,6 @@
         <div class="user-profile">
             <!-- User profile image -->
             <div class="profile-img"> <img src="<!-- IF {PHP.usr.profile.user_avatar} -->{PHP.usr.profile.user_avatar}<!-- ELSE -->datas/defaultav/blank.png<!-- ENDIF -->" alt="{PHP.usr.profile.user_name}" />
-                <!-- this is blinking heartbit-->
-                <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
             </div>
             <!-- User profile text-->
             <div class="profile-text">
