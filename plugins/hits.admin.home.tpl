@@ -3,7 +3,7 @@
 <!-- BEGIN: STAT -->
 	<div class="col-md-12 p-r-40 m-t-30 m-b-30">
 		<h5 class="card-title"><i class="mdi mdi-chart-pie"></i> {PHP.L.hits_hits}</h5>
-		<div class="wrapper">
+		<div class="card-body">
 <!-- BEGIN: ADMIN_HOME_ROW -->
             <h5 class="m-t-30">{ADMIN_HOME_DAY}<span class="pull-right">  | {ADMIN_HOME_PERCENTBAR}%</span><span class="pull-right">{ADMIN_HOME_HITS|cot_declension($this,'Hits')}&nbsp;</span></h5>
                                         <div class="progress ">
@@ -20,7 +20,7 @@
 <!-- BEGIN: ACTIVITY -->
 	<div class="col-md-12 p-r-40 m-t-30 m-b-30">
 		<h5><i class="fa fa-bar-chart-o"></i> {PHP.L.hits_activity}</h5>
-		<div class="wrapper">
+		<div class="card-body">
 			<table class="table table-striped">
 				<tr>
 					<td><a href="{ADMIN_HOME_NEWUSERS_URL}">{PHP.L.home_newusers}</a></td>
