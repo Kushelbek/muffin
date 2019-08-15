@@ -18,7 +18,7 @@ $R['input_text_metadesc'] = '<textarea name="{$name}" rows="2" cols="64" maxleng
 //Form
 $R['input_radio'] = '<input name="{$name}" type="radio" id="{$value}-{$name}" class="with-gap radio-col-deep-purple" value="{$value}"{$checked}{$attrs} /><label for="{$value}-{$name}">{$title}</label>';
 
-$R['input_textarea'] = '<textarea name="{$name}" rows="{$rows}" cols="{$cols}"{$attrs}>{$value}</textarea>{$error}';
+$R['input_textarea'] = '<textarea class="form-control" name="{$name}" rows="{$rows}" {$attrs}>{$value}</textarea>{$error}';
 
 $R['input_checkbox'] = '<input type="hidden" name="{$name}" value="{$value_off}" /><label for="{$name}-{$value}"><input type="checkbox" name="{$name}" value="{$value}" {$checked}{$attrs} id="фкф" class="chk-col-green" />{$title}</label>';
 
