@@ -35,7 +35,7 @@ $R['admin_code_paused'] = '<span class="badge badge-warning">'.$L['adm_paused'].
 $R['admin_code_running'] = '<span class="badge badge-success">'.$L['adm_running'].'</span>';
 $R['admin_code_partrunning'] = '<span class="badge badge-warning">'.$L['adm_partrunning'].'</span>';
 $R['admin_code_notinstalled'] = '<span class="badge badge-danger">'.$L['adm_notinstalled'].'</span>';
-$R['admin_code_present'] = '<span class="badge badge-successt">'.$L['adm_present'].'</span>';
+$R['admin_code_present'] = '<span class="badge badge-success">'.$L['adm_present'].'</span>';
 
 //	Template Settings
 $R['admin-config-icons'] = '1';	// Display item icons (global: config, extensions, users, other)
