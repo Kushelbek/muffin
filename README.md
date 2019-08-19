@@ -18,13 +18,13 @@ Theme distributed under the BSD license.
 # Author
 [Evgeniy Yalovoy](http://github.com/Kushelbek)
 
-##References
+# References
 - [https://github.com/Kushelbek/muffin](https://github.com/Kushelbek/muffin) -- Latest version of the muffin Theme
 - [www.cotonti.com](http://www.cotonti.com) -- Cotonti CMF homepage
 - [www.y-ea.ru] -- If you have some idia or question, contact me
 
 # Special thnx
-Special thnx for permission to take as a basis yukon(https://github.com/seditio/yukon) admin theme - Kort (http://www.seditio.by)
+Special thnx for permission to take as a basis [yukon](https://github.com/seditio/yukon) admin theme - [Kort](http://www.seditio.by)
 
 
 
