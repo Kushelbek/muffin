@@ -26,5 +26,7 @@ Theme distributed under the BSD license.
 # Special thnx
 Special thnx for permission to take as a basis [yukon](https://github.com/seditio/yukon) admin theme - [Dmitri *Kort* Beliavski](http://www.seditio.by).
 
+Thanks to [Roffun](https://github.com/Roffun) for motivation and guidance.
+
 
 
