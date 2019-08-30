@@ -33,7 +33,7 @@
 								<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
 							</td>
 							<td class="action centerall">
-								<div class="btn-group">
+								<div class="button-group item-control">
 									<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-primary">
 										<i class="mdi mdi-reload"></i> <span>{PHP.L.Reset}</span>
 									</a>
