@@ -34,7 +34,7 @@
 							</td>
 							<td class="action centerall">
 								<div class="button-group item-control">
-									<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-primary">
+									<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-danger">
 										<i class="mdi mdi-reload"></i> <span>{PHP.L.Reset}</span>
 									</a>
 									<button type="submit" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="mdi mdi-reload"></i> {PHP.L.Update}</button>
