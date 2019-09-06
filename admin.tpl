@@ -142,8 +142,8 @@
             </ol>
         </div>
     </div>
-    <!-- BEGIN: BODY -->
     <div id="ajaxBlock" class="container-fluid">
+    <!-- BEGIN: BODY -->
         <div class="row">
             <div class="col-md-6 col-lg-4 col-xlg-2">
                 <div class="card card-inverse card-info">
@@ -215,13 +215,9 @@
             </div>
         </div>
 
-        <div class="row">
-
+        <div id="main" class="row">
             {ADMIN_MAIN}
-
         </div>
-
-    </div>
     <!-- END: BODY -->
 </div>
 <!-- END: MAIN -->

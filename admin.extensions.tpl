@@ -175,16 +175,16 @@
 						<td>
 							<div class="button-group item-control">
 								<!-- IF !{PHP.isinstalled} AND {PHP.dependencies_satisfied} -->
-								<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="ajax btn btn-success"><i class="mdi mdi-plus"></i> {PHP.L.adm_opt_install}</a>
+								<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_INSTALL_URL}" class="btn btn-success"><i class="mdi mdi-plus"></i> {PHP.L.adm_opt_install}</a>
 								<!-- ENDIF -->
 								<!-- IF {PHP.isinstalled} -->
 								<!-- IF {PHP.exists} -->
-								<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="ajax btn btn-success"><i class="mdi mdi-reload"></i> {PHP.L.adm_opt_update}</a>
+								<a title="{PHP.L.adm_opt_install_explain}" href="{ADMIN_EXTENSIONS_UPDATE_URL}" class="btn btn-success"><i class="mdi mdi-reload"></i> {PHP.L.adm_opt_update}</a>
 								<!-- ENDIF -->
-								<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_URL}" class="ajax btn btn-success"><i class="mdi mdi-delete"></i> {PHP.L.adm_opt_uninstall}</a>
-								<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="ajax btn btn-success"><i class="mdi mdi-play-pause"></i> {PHP.L.adm_opt_pauseall}</a>
+								<a title="{PHP.L.adm_opt_uninstall_explain}" href="{ADMIN_EXTENSIONS_UNINSTALL_URL}" class="btn btn-danger"><i class="mdi mdi-delete"></i> {PHP.L.adm_opt_uninstall}</a>
+								<a title="{PHP.L.adm_opt_pauseall_explain}" href="{ADMIN_EXTENSIONS_PAUSE_URL}" class="btn btn-success"><i class="mdi mdi-play-pause"></i> {PHP.L.adm_opt_pauseall}</a>
 								<!-- IF {PHP.exists} -->
-								<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="ajax btn btn-success"><i class="mdi mdi-play"></i> {PHP.L.adm_opt_unpauseall}</a>
+								<a title="{PHP.L.adm_opt_unpauseall_explain}" href="{ADMIN_EXTENSIONS_UNPAUSE_URL}" class="btn btn-success"><i class="mdi mdi-play"></i> {PHP.L.adm_opt_unpauseall}</a>
 								<!-- ENDIF -->
 								<!-- ENDIF -->
 							</div>
