@@ -38,7 +38,7 @@
 			
 			<div class="button-group item-control">
 				<a href="{ADMIN_STRUCTURE_URL_EXTRAFIELDS}" class="btn btn-success"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.adm_extrafields}</a>
-				<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="ajax btn btn-success" title="{PHP.L.adm_tpl_resyncalltitle}"><i class="mdi mdi-loop"></i> {PHP.L.Resync}</a>
+				<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="btn btn-success" title="{PHP.L.adm_tpl_resyncalltitle}"><i class="mdi mdi-loop"></i> {PHP.L.Resync}</a>
 				<!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
 				<a href="{ADMIN_STRUCTURE_I18N_URL}" class="btn btn-success"><i class="mdi mdi-hexagon-multiple"></i>{PHP.L.i18n_structure}</a>
 				<!-- ENDIF -->
@@ -142,7 +142,7 @@
 	<div class="card">
 		<div class="card-body">
 			<h3>{PHP.L.editdeleteentries}:</h3>
-			<form name="savestructure" id="savestructure" action="{ADMIN_STRUCTURE_UPDATE_FORM_URL}" method="post" class="ajax" enctype="multipart/form-data">
+			<form name="savestructure" id="savestructure" action="{ADMIN_STRUCTURE_UPDATE_FORM_URL}" method="post" class="" enctype="multipart/form-data">
 				<div class="table-responsive">
 					<table class="table">
 						<tr>
@@ -161,9 +161,9 @@
 							<td>{ADMIN_STRUCTURE_TPLQUICK}</td>
 							<td>{ADMIN_STRUCTURE_COUNT}</td>
 							<td>
-								<a data-toggle="tooltip" data-placement="top" title="{PHP.L.Options}" data-original-title="{PHP.L.Options}" href="{ADMIN_STRUCTURE_OPTIONS_URL}" class="ajax btn btn-success"><i class="mdi mdi-settings"></i></a>
+								<a data-toggle="tooltip" data-placement="top" title="{PHP.L.Options}" data-original-title="{PHP.L.Options}" href="{ADMIN_STRUCTURE_OPTIONS_URL}" class="btn btn-success"><i class="mdi mdi-settings"></i></a>
 								<!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} --><a  data-toggle="tooltip" data-placement="top" title="{PHP.L.Rights}" data-original-title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn btn-success"><i class="mdi mdi-lock-plus"></i></a><!-- ENDIF -->
-								<!-- IF {PHP.dozvil} --><a data-toggle="tooltip" data-placement="top" title="{PHP.L.Delete}" data-original-title="{PHP.L.Delete}" title="{PHP.L.Delete}" href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" class="btn btn-success"><i class="mdi mdi-delete"></i></a><!-- ENDIF -->
+								<!-- IF {PHP.dozvil} --><a data-toggle="tooltip" data-placement="top" title="{PHP.L.Delete}" data-original-title="{PHP.L.Delete}" title="{PHP.L.Delete}" href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" class="btn btn-danger"><i class="mdi mdi-delete"></i></a><!-- ENDIF -->
 								<a data-toggle="tooltip" data-placement="top" title="{PHP.L.Pages}" data-original-title="{PHP.L.Pages}" target="_blank" href="{ADMIN_STRUCTURE_JUMPTO_URL}" class="btn btn-success"><i class="mdi mdi-folder"></i></a> 
 							</td>
 						</tr>
@@ -184,7 +184,7 @@
 	<div class="card">
 		<div class="card-body">
 			<h3><i class="mdi mdi-plus"></i> {PHP.L.Add}:</h3>
-			<form name="addstructure" id="addstructure" action="{ADMIN_STRUCTURE_URL_FORM_ADD}" method="post" class="ajax" enctype="multipart/form-data">
+			<form name="addstructure" id="addstructure" action="{ADMIN_STRUCTURE_URL_FORM_ADD}" method="post" class="" enctype="multipart/form-data">
 				<div class="table-responsive">
 					<table class="table">
 						<tr>
