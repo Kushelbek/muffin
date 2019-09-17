@@ -51,79 +51,67 @@
         <div class="card-body collapse show">
             <form action="{PHP|cot_url('admin','m=market'),'',true}" id="prd_form" method="POST">
                 <!-- BEGIN: PRD_ROWS -->
-                <div class="media">
-                    <h4>
-                        <!-- IF {PRD_ROW_COST} > 0 -->
-                        <div class="cost pull-right">{PRD_ROW_COST} {PHP.cfg.payments.valuta}</div><!-- ENDIF --><a href="{PRD_ROW_URL}">{PRD_ROW_SHORTTITLE}</a>
-                    </h4>
-                    <label><input type="checkbox" name="prd_arr[]" value="{PRD_ROW_ID}">Отметить</label>
-                    <p class="owner">{PRD_ROW_OWNER_NAME} <span class="date">[{PRD_ROW_DATE}]</span> &nbsp;{PRD_ROW_COUNTRY} {PRD_ROW_REGION} {PRD_ROW_CITY} &nbsp; {PRD_ROW_ADMIN_EDIT}</p>
-                    <div class="pull-right">
-                        <!-- IF {PRD_ROW_STATE} == 2 -->
-                        <a href="{PRD_ROW_VALIDATE_URL}" class="button btn btn-success">{PHP.L.Validate}</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- IF {PRD_ROW_OWNER_AVATAR_SRC} -->
+                            <img class="rounded-circle" width="40" height="40" src="{PRD_ROW_OWNER_AVATAR_SRC}">
+                            <!-- ELSE -->
+                            <img class="uk-border-circle" width="40" height="40" src="datas\defaultav\blank.png">
+                            <!-- ENDIF -->
+                            <h3 class="float-right">{PRD_ROW_OWNER_NICKNAME}</h3>
+                        </div>
+                        <!-- IF {PRD_ROW_ID|att_count('market',$this,'','images')} -->
+                        <img class="card-img-top img-responsive" src="{PRD_ROW_ID|att_get('market',$this,'')|att_thumb($this,369,246,'crop',false)}" alt="{PRD_ROW_SHORTTITLE}">
+                        <!-- ELSE -->
+                        <img class="card-img-top img-responsive" src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/img/noimage.png" alt="{PRD_ROW_SHORTTITLE}">
                         <!-- ENDIF -->
-                        <a href="{PRD_ROW_DELETE_URL}" class="button btn btn-warning">{PHP.L.Delete}</a>
+                        <!-- IF {PRD_ROW_MAVATAR.1}  -->
+                        <img class="card-img-top img-responsive" src="{PRD_ROW_MAVATAR.1|cot_mav_thumb($this, 369, 246, crop)}" />
+                        <!-- ELSE -->
+
+                        <!-- ENDIF -->
+                        <div class="card-body">
+                            <h4 class="card-title"><a class="text-muted" href="{PRD_ROW_URL}">{PRD_ROW_SHORTTITLE}</a></h4>
+                            <p class="card-text">{PRD_ROW_TEXT|strip_tags($this)|mb_substr($this, 0, 60, 'UTF-8')}...</p>
+                            <div class="button-group item-control">
+                                <a class="btn btn-success" href="{PRD_ROW_VALIDATE_URL}" class="text-inverse p-r-10" data-toggle="tooltip" title="{PHP.L.Validate}" data-original-title="{PHP.L.Validate}"><i class="ti-marker-alt"></i></a>
+                                <a class="btn btn-danger" href="{PRD_ROW_DELETE_URL}" class="text-inverse" title="{PHP.L.Delete}" data-toggle="tooltip" data-original-title="{PHP.L.Delete}"><i class="ti-trash"></i></a>
+                                <input type="checkbox" id="prd_arr[]" class="chk-col-green" name="prd_arr[]" />
+                                <label for="prd_arr[]">Отметить</label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">{PRD_ROW_DATE}</small></p>
+                        </div>
                     </div>
-                    <p class="text">{PRD_ROW_SHORTTEXT}</p>
-                    <p class="type"><a href="{PRD_ROW_CATURL}">{PRD_ROW_CATTITLE}</a></p>
                 </div>
                 <!-- END: PRD_ROWS -->
-                <table class="table product-overview">
-                     <tbody>
-                         <!-- BEGIN: PRD_ROWS -->
-                        <tr>
-                            <td><a href="{PRD_ROW_URL}" target="_blank">{PRD_ROW_SHORTTITLE}</a></td>
-                            <!-- IF {PRD_ROW_ID|att_count('market',$this,'','images')} > 0 -->
-                            <td>
-                                <span class="image kw-prodimage">
-                                    <img src="{PRD_ROW_ID|att_get('market',$this,'')|att_thumb($this,80,100,'crop',false)}" alt="{PRD_ROW_SHORTTITLE}">
-                                </span>
-                            </td>
-                            <!-- ENDIF -->
-                            <!-- IF {PRD_ROW_MAVATAR.1} -->
-                            <td>
-                                <span class="image kw-prodimage">
-                                    <img src="{PRD_ROW_MAVATAR.1|cot_mav_thumb($this, 80, 100, crop)}" />
-                                </span>
-                            </td>
-                            <!-- ENDIF -->
-                             <!-- IF {PRD_ROW_COST} > 0 -->
-                            <td>{PRD_ROW_COST} {PHP.cfg.payments.valuta}</td>
-                            <!-- ENDIF -->
-                            <td>{PRD_ROW_DATE}</td>
-                            <td>
-                                <span class="label label-success font-weight-100">Paid</span>
-                            </td>
-                            <td><a href="javascript:void(0)" class="text-inverse p-r-10" data-toggle="tooltip" title="" data-original-title="Edit"><i class="ti-marker-alt"></i></a> <a href="javascript:void(0)" class="text-inverse" title="" data-toggle="tooltip" data-original-title="Delete"><i class="ti-trash"></i></a></td>
-                        </tr>
-                          <!-- END: PRD_ROWS -->
-                    </tbody>
-                </table>
-
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <select name="prd_action" id="prd_action">
+                                <option value="0">---</option>
+                                <option value="delete">{PHP.L.Delete}</option>
+                                <option value="validate">{PHP.L.Validate}</option>
+                            </select>
+                            <button type="submit" class="btn btn-default">{PHP.L.Confirm}</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- IF {PAGENAV_COUNT} > 0 -->
+                <ul>{PAGENAV_PAGES}</ul>
+                <!-- ELSE -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            {PHP.L.market_notfound}
+                        </div>
+                    </div>
+                </div>
+                <!-- ENDIF -->
             </form>
         </div>
     </div>
 </div>
-<hr>
-<div class="col-md-6">
-    <div class="span3">
-        <select name="prd_action" id="prd_action">
-            <option value="0">---</option>
-            <option value="delete">{PHP.L.Delete}</option>
-            <option value="validate">{PHP.L.Validate}</option>
-        </select>
-    </div>
-    <div class="span9">
-        <button type="submit" class="btn btn-default">{PHP.L.Confirm}</button>
-    </div>
-</div>
-
-<!-- IF {PAGENAV_COUNT} > 0 -->
-<div class="pagination">
-    <ul>{PAGENAV_PAGES}</ul>
-</div>
-<!-- ELSE -->
-<div class="alert">{PHP.L.market_notfound}</div>
-<!-- ENDIF -->
-</form>
 <!-- END: MAIN -->
