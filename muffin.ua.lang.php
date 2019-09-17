@@ -40,3 +40,7 @@ $L['Toprecentpages'] = 'кращих нових сторінок';
 $L['Within'] = 'за останні';
 
 $L['Newcomments'] = 'Нові коментарі';
+
+$L['market-extra'] = 'Экстра поля для магазина';
+
+$L['Payments'] = 'Payments';

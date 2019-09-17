@@ -11,7 +11,7 @@ defined('COT_CODE') or die('Wrong URL.');
 
 $L['admin-hi'] = 'Привет';
 $L['admin-panel'] = 'Управление сайтом';
-$L['admin-queued'] = 'на утверждении';
+$L['admin-queued'] = 'На утверждении';
 $L['admin-sectionname'] = 'Локация';
 
 $Ls['Hits'] = 'просмотр,просмотра,просмотров';
@@ -40,3 +40,7 @@ $L['Toprecentpages'] = 'лучших новых страниц';
 $L['Within'] = 'за последние';
 
 $L['Newcomments'] = 'Новые комментарии';
+
+$L['market-extra'] = 'Экстра поля для магазина';
+
+$L['Payments'] = 'Система оплаты';

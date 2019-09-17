@@ -40,3 +40,8 @@ $L['Toprecentpages'] = 'best new pages';
 $L['Within'] = 'within last';
 
 $L['Newcomments'] = 'New comments';
+
+$L['market-extra'] = 'Market extrafield';
+
+$L['Payments'] = 'Payments';
+

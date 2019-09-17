@@ -32,12 +32,25 @@
                 <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
                 <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
             </div>
+             <h3 class="float-left"><i class="mdi mdi-wallet"></i> {PHP.L.payments_balance}</h3>
         </div>
         <div class="card-body collapse show">
-            <!-- IF {PHP.cfg.payments.balance_enabled} -->
-            <p><b>{PHP.L.payments_siteinvoices}:</b> {PHP.L.payments_debet}: {INBALANCE} {PHP.cfg.payments.valuta} | {PHP.L.payments_credit}: {OUTBALANCE} {PHP.cfg.payments.valuta} | {PHP.L.payments_balance}: {BALANCE} {PHP.cfg.payments.valuta}</p>
-            <!-- ENDIF -->
-            <p><b>{PHP.L.payments_allpayments}:</b> {CREDIT} {PHP.cfg.payments.valuta}</p>
+            <ul class="list-unstyled row text-center">
+                <!-- IF {PHP.cfg.payments.balance_enabled} -->
+                <li class="col"><i class="mdi mdi-currency-eur"></i><span>{PHP.L.payments_siteinvoices}</span>
+                    <h3>{PHP.L.payments_debet}: {INBALANCE} {PHP.cfg.payments.valuta}</h3>
+                </li>
+                <li class="col"><i class="mdi mdi-credit-card"></i><span>{PHP.L.payments_credit}</span>
+                    <h3>{OUTBALANCE} {PHP.cfg.payments.valuta}</h3>
+                </li>
+                <li class="col"><i class="mdi mdi-wallet"></i><span>{PHP.L.payments_balance} </span>
+                    <h3>{BALANCE} {PHP.cfg.payments.valuta}</h3>
+                </li>
+                <!-- ENDIF -->
+                <li class="col"><i class="mdi mdi-sigma"></i><span>{PHP.L.payments_allpayments} </span>
+                    <h3>{CREDIT} {PHP.cfg.payments.valuta}</h3>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -50,6 +63,7 @@
                 <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
                 <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
             </div>
+            <h3 class="float-left"><i class="mdi mdi-face"></i> {PHP.L.Users}</h3>
         </div>
         <div class="card-body collapse show">
             <div class="table-responsive">
@@ -106,6 +120,7 @@
                 <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
                 <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
             </div>
+            <h3 class="float-left"><i class="mdi mdi-face"></i> {PHP.L.Users}</h3>
         </div>
         <div class="card-body collapse show">
             <div class="table-responsive">
@@ -155,6 +170,7 @@
                 <a class="btn-minimize" data-action="expand"><i class="mdi mdi-arrow-expand"></i></a>
                 <a class="btn-close" data-action="close"><i class="ti-close"></i></a>
             </div>
+            <h3 class="float-left"><i class="mdi mdi-face"></i> {PHP.L.Users}</h3>
         </div>
         <div class="card-body collapse show">
             <div class="table-responsive">

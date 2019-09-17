@@ -51,7 +51,7 @@
                         <!-- IF {PHP.cot_plugins_active.csv_import} -->
                         <li><a href="{PHP.usr.id|cot_url('admin','m=other&p=csv_import')}"><i class="mdi mdi-file-document"></i> CSV Import</a></li>
                         <!-- ENDIF -->
-                        <li><a href="{PHP|cot_url('admin','m=page')}"><i class="mdi mdi-feather"></i> {PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a></li>
+                        <li><a href="{PHP|cot_url('admin','m=page')}"><i class="mdi mdi-feather"></i> {PHP.L.admin-queued} <span class="badge badge-info"> {PHP.sys.pagesqueued|cot_declension($this, '')}</span></a></li>
                         <li><a href="{PHP|cot_url('page','m=add')}" target="_blank"><i class="mdi mdi-plus"></i> {PHP.L.Add}</a></li>
                         <li><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.home_ql_b2_2}</a></li>
                         <!-- IF {PHP.cot_plugins_active.portal_stats} -->
@@ -59,6 +59,15 @@
                         <!-- ENDIF -->
                     </ul>
                 </li>
+                <!-- IF {PHP|cot_module_active('market')} -->
+                <li> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi mdi-cart-outline"></i><span class="hide-menu">{PHP.L.market}</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="{PHP|cot_url('admin','m=market&p=default&c=&sq=&c=&sort=&state=2')}"><i class="mdi mdi-file"></i> {PHP.sys.marketsqueued|cot_declension($this,'')} {PHP.L.market_admin_home_valqueue}{PHP.L.market_admin_home_valqueue}</a></li>
+                        <li><a href="{PHP|cot_url('market','m=add')}" target="_blank"><i class="mdi mdi-plus"></i> {PHP.L.Add}</a></li>
+                        <li><a href="{PHP.db_market|cot_url('admin','m=extrafields&n=$this')}"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.market-extra}</a></li>
+                    </ul>
+                </li>
+                <!-- ENDIF -->
                 <li> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-face-profile"></i><span class="hide-menu">{PHP.L.Users}</span></a>
                     <ul aria-expanded="false" class="collapse">
                         <!-- IF {PHP.R.Usermanager} -->
@@ -74,6 +83,7 @@
                         <li><a href="{PHP|cot_url('admin','m=cache')}"><i class="mdi mdi-cached"></i> {PHP.L.adm_internalcache}</a></li>
                         <li><a href="{PHP|cot_url('admin','m=cache','?s=disk')}"><i class="mdi mdi-cached"></i> {PHP.L.adm_diskcache}</a></li>
                         <li><a href="{PHP|cot_url('admin','m=extrafields')}"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.adm_extrafields}</a></li>
+                        <li><a href="{PHP|cot_url('admin','m=payments')}"><i class="mdi mdi-currency-eur"></i> {PHP.L.Payments}</a></li>
                     </ul>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-cube-outline"></i><span class="hide-menu">{PHP.L.Engine}</span></a>
@@ -143,7 +153,7 @@
         </div>
     </div>
     <div id="ajaxBlock" class="container-fluid">
-    <!-- BEGIN: BODY -->
+        <!-- BEGIN: BODY -->
         <div class="row">
             <div class="col-md-6 col-lg-4 col-xlg-2">
                 <div class="card card-inverse card-info">
@@ -218,6 +228,6 @@
         <div id="main" class="row">
             {ADMIN_MAIN}
         </div>
-    <!-- END: BODY -->
-</div>
-<!-- END: MAIN -->
+        <!-- END: BODY -->
+    </div>
+    <!-- END: MAIN -->
