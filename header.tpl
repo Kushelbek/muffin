@@ -49,7 +49,7 @@
 						</b>
 
 						<span>
-							<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 50 -->{PHP.cfg.maintitle}
+							<!-- IF {PHP.cfg.maintitle} && {PHP.cfg.maintitle|mb_strlen} < 17 -->{PHP.cfg.maintitle}
 							<!-- ELSE -->{PHP.L.hea_viewsite}</span><!-- ENDIF --> </a>
 				</div>
 				<!-- End Logo -->
