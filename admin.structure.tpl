@@ -175,7 +175,10 @@
 					</table>
 				</div>
 			</form>
-			<p>{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT} <span>{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, {PHP.L.Onpage}: {ADMIN_STRUCTURE_COUNTER_ROW}</span></p>
+            <p>{PHP.L.Total} <span class="badge badge-info">&nbsp;&nbsp;{ADMIN_STRUCTURE_TOTALITEMS}&nbsp;&nbsp;</span> {PHP.L.Onpage}<span class="badge badge-info">&nbsp;&nbsp;{ADMIN_STRUCTURE_COUNTER_ROW}&nbsp;&nbsp;</span></p>
+            <div>
+                <ul class="pagination">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT} </ul>
+            </div>
 		</div>
 	</div>
 	<!-- END: DEFAULT -->

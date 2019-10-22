@@ -116,8 +116,8 @@
                                 </div>
 								<p>{PHP.L.Total} <span class="badge badge-info">&nbsp;&nbsp;{ADMIN_PAGE_TOTALITEMS}&nbsp;&nbsp;</span> {PHP.L.Onpage} <span class="badge badge-info">&nbsp;&nbsp;{ADMIN_PAGE_ON_PAGE}&nbsp;&nbsp;</span> </p>
 <!-- IF {ADMIN_PAGE_PAGNAV} -->
-								<div class="text-{PHP.R.admin-config-pagialign}">
-									<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}</ul>
+								<div>
+									<ul class="pagination">{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}</ul>
 								</div>
 <!-- ENDIF -->
 							</form>
