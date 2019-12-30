@@ -44,3 +44,4 @@ $L['Newcomments'] = 'Нові коментарі';
 $L['market-extra'] = 'Экстра поля для магазина';
 
 $L['Payments'] = 'Payments';
+$L['Approve'] = 'Модерация комментариев';

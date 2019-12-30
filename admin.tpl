@@ -86,6 +86,9 @@
                         <!-- IF {PHP|cot_module_active('payments')} -->
                         <li><a href="{PHP|cot_url('admin','m=payments')}"><i class="mdi mdi-currency-eur"></i> {PHP.L.Payments}</a></li>
                         <!-- ENDIF -->
+                        <!-- IF {PHP|cot_plugins_active('approve')} -->
+                        <li><a href="{PHP|cot_url('admin','m=other','?p=approve')}"><i class="mdi mdi-comment-check"></i> {PHP.L.Approve}</a></li>
+                        <!-- ENDIF -->
                     </ul>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-cube-outline"></i><span class="hide-menu">{PHP.L.Engine}</span></a>

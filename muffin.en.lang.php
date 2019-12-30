@@ -44,4 +44,5 @@ $L['Newcomments'] = 'New comments';
 $L['market-extra'] = 'Market extrafield';
 
 $L['Payments'] = 'Payments';
+$L['Approve'] = 'Approve comments';
 
