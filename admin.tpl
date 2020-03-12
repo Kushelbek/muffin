@@ -81,12 +81,12 @@
                 <li> <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">{PHP.L.Other}</span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="{PHP|cot_url('admin','m=cache')}"><i class="mdi mdi-cached"></i> {PHP.L.adm_internalcache}</a></li>
-                        <li><a href="{PHP|cot_url('admin','m=cache','?s=disk')}"><i class="mdi mdi-cached"></i> {PHP.L.adm_diskcache}</a></li>
+                        <li><a href="{PHP|cot_url('admin','m=cache','&s=disk')}"><i class="mdi mdi-cached"></i> {PHP.L.adm_diskcache}</a></li>
                         <li><a href="{PHP|cot_url('admin','m=extrafields')}"><i class="mdi mdi-hexagon-multiple"></i> {PHP.L.adm_extrafields}</a></li>
                         <!-- IF {PHP|cot_module_active('payments')} -->
                         <li><a href="{PHP|cot_url('admin','m=payments')}"><i class="mdi mdi-currency-eur"></i> {PHP.L.Payments}</a></li>
                         <!-- ENDIF -->
-                        <!-- IF {PHP|cot_plugins_active('approve')} -->
+                        <!-- IF {PHP.cot_plugins_active.approve} -->
                         <li><a href="{PHP|cot_url('admin','m=other','?p=approve')}"><i class="mdi mdi-comment-check"></i> {PHP.L.Approve}</a></li>
                         <!-- ENDIF -->
                     </ul>
